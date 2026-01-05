@@ -1,0 +1,164 @@
+
+// ======================================
+// Core Color Primitives
+// ======================================
+
+$color-navy: #001f3f; 
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-gray-50:  #f9fafb;
+$color-gray-100: #f3f4f6;
+$color-gray-200: #e5e7eb;
+$color-gray-300: #d1d5db;
+$color-gray-400: #9ca3af;
+$color-gray-500: #6b7280;
+$color-gray-600: #4b5563;
+$color-gray-700: #374151;
+$color-gray-800: #1f2937;
+$color-gray-900: #111827;
+
+$color-blue-500: #2563eb;
+$color-green-500: #16a34a;
+$color-yellow-500: #ca8a04;
+$color-red-500: #dc2626;
+
+// ======================================
+// Semantic Brand Tokens
+// ======================================
+
+$brand-primary: $color-navy;
+$brand-on-primary: $color-white;
+$brand-secondary: $color-blue-500;
+
+// ======================================
+// Surface Tokens
+// ======================================
+
+$surface-background: $color-gray-100;
+$surface-default: $color-white;
+$surface-muted: $color-gray-50;
+$surface-border: $color-gray-200;
+
+// ======================================
+// Text Tokens
+// ======================================
+
+$text-main: $color-gray-900;
+$text-muted: $color-gray-600;
+$text-inverse: $color-white;
+$text-disabled: $color-gray-400;
+
+// ======================================
+// State Tokens
+// ======================================
+
+$state-hover: rgba($color-black, 0.05);
+$state-active: rgba($color-black, 0.1);
+$state-focus: rgba($color-blue-500, 0.4);
+
+$state-success: $color-green-500;
+$state-warning: $color-yellow-500;
+$state-error: $color-red-500;
+
+// ======================================
+// Typography
+// ======================================
+
+$font-family-sans: system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-2xl: 1.5rem;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+$line-height-tight: 1.25;
+$line-height-normal: 1.5;
+$line-height-loose: 1.75;
+
+// ======================================
+// Spacing & Layout
+// ======================================
+
+$space-1: 0.25rem;
+$space-2: 0.5rem;
+$space-3: 0.75rem;
+$space-4: 1rem;
+$space-5: 1.25rem;
+$space-6: 1.5rem;
+$space-8: 2rem;
+$space-10: 2.5rem;
+
+// ======================================
+// Borders & Elevation
+// ======================================
+
+$border-radius-sm: 0.25rem;
+$border-radius-md: 0.5rem;
+$border-radius-lg: 0.75rem;
+
+$border-width-thin: 1px;
+
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+
+
+// ======================================
+// CSS Variables
+// ======================================
+
+:root {
+  /* Brand */
+  --color-primary: #{$brand-primary};
+  --color-on-primary: #{$brand-on-primary};
+  --color-secondary: #{$brand-secondary};
+
+  /* Surfaces */
+  --color-bg: #{$surface-background};
+  --color-surface: #{$surface-default};
+  --color-surface-muted: #{$surface-muted};
+  --color-border: #{$surface-border};
+
+  /* Text */
+  --color-text: #{$text-main};
+  --color-text-muted: #{$text-muted};
+  --color-text-inverse: #{$text-inverse};
+  --color-text-disabled: #{$text-disabled};
+
+  /* States */
+  --color-hover: #{$state-hover};
+  --color-active: #{$state-active};
+  --color-focus: #{$state-focus};
+  --color-success: #{$state-success};
+  --color-warning: #{$state-warning};
+  --color-error: #{$state-error};
+
+  /* Typography */
+  --font-family-sans: #{$font-family-sans};
+  --font-size-sm: #{$font-size-sm};
+  --font-size-md: #{$font-size-md};
+  --font-size-lg: #{$font-size-lg};
+
+  /* Spacing */
+  --space-2: #{$space-2};
+  --space-4: #{$space-4};
+  --space-6: #{$space-6};
+
+  /* Borders */
+  --radius-sm: #{$border-radius-sm};
+  --radius-md: #{$border-radius-md};
+  --radius-lg: #{$border-radius-lg};
+
+  /* Elevation */
+  --shadow-sm: #{$shadow-sm};
+  --shadow-md: #{$shadow-md};
+  --shadow-lg: #{$shadow-lg};
+}
