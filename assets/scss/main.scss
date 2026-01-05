@@ -1,0 +1,12 @@
+@import "abstract/colors";
+@import "base/reset";
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;
+}
+
+h1 {
+  color: var(--color-primary);
+}

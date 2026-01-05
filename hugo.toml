@@ -1,4 +1,6 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
+languageCode = 'en-uk'
 title = 'My New Hugo Site'
-theme = 'kintore'
+
+[params]
+  brandColor = '#004a99' # You can use this in your SCSS later!
