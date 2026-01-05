@@ -1,0 +1,13 @@
+# Hugo output directory
+public/
+
+# Resources directory (Generated images/processed CSS)
+# Keeping this ignored ensures a clean build every time
+resources/
+
+# Hugo's internal cache
+.hugo_build.temp/
+hugo_stats.json
+
+# Local environment overrides
+.env
