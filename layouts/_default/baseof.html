@@ -23,5 +23,20 @@
     {{ partial "header.html" . }}
 
     <main>{{ block "main" . }}{{ end }}</main>
+
+    <script>
+    function addClassOnScroll(element, className, scrollPx) {
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= scrollPx) {
+          element.classList.add(className);
+        } else {
+          element.classList.remove(className);
+        }
+      });
+    }
+    const header = document.querySelector('.header');
+
+    addClassOnScroll(header, 'scrolled', 100);
+  </script>
   </body>
 </html>
