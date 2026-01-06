@@ -1,6 +1,3 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-uk'
-title = 'My New Hugo Site'
-
-[params]
-  brandColor = '#004a99' # You can use this in your SCSS later!
+title = 'Danny Site'
