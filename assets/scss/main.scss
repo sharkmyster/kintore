@@ -16,19 +16,18 @@ h1 {
 header {
   max-width: 1200px;
   margin: 1rem auto;
-  padding: .5rem; 
+  padding: 0.5rem;
   color: $brand-primary;
   background-color: var(--color-surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
 
   @include tablet-up {
-    padding: 1rem; 
-
+    padding: 1rem;
   }
 
   @include desktop-up {
-    padding: 1rem;  
+    padding: 1rem;
     font-size: 1rem;
   }
 }

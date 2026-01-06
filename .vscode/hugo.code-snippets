@@ -1,0 +1,22 @@
+{
+  "Hugo if block": {
+    "prefix": "hif",
+    "body": ["{{ if ${1:condition} }}", "  $0", "{{ end }}"]
+  },
+  "Hugo with block": {
+    "prefix": "hwith",
+    "body": ["{{ with ${1:value} }}", "  $0", "{{ end }}"]
+  },
+  "Hugo range block": {
+    "prefix": "hrange",
+    "body": ["{{ range ${1:collection} }}", "  $0", "{{ end }}"]
+  },
+  "Hugo partial": {
+    "prefix": "hpartial",
+    "body": ["{{ partial \"${1:name}.gohtml\" . }}"]
+  },
+  "Hugo partialCached": {
+    "prefix": "hpc",
+    "body": ["{{ partialCached \"${1:name}.gohtml\" . ${2:key} }}"]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    "layouts/**/*.html": "gohtml"
+  },
+
+  "[gohtml]": {
+    "editor.formatOnSave": false,
+    "editor.defaultFormatter": null,
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+
+  "html.format.enable": false
+}
