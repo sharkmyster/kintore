@@ -7,3 +7,5 @@ layout = 'contact'
 +++
 
 Get in touch with me!
+
+{{<phonenumber number="123456789">}}

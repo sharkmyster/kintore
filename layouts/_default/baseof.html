@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Software consultancy" />
     <title>{{ .Title }} | {{ .Site.Title }}</title>
 
     {{ $opts := dict "transpiler" "libsass" "targetPath" "css/main.css" }}
@@ -14,29 +15,40 @@
     {{ $style := resources.Get "scss/main.scss" | toCSS $opts }}
 
     {{ if hugo.IsProduction }}
-      {{ $style = $style | fingerprint}}
+      {{ $style = $style | fingerprint }}
     {{ end }}
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
   </head>
   <body>
     {{ partial "header.html" . }}
 
-    <main>{{ block "main" . }}{{ end }}</main>
+
+    <main>
+      {{ block "main" . }}{{ end }}
+    </main>
 
     <script>
-    function addClassOnScroll(element, className, scrollPx) {
-      window.addEventListener('scroll', () => {
-        if (window.scrollY >= scrollPx) {
-          element.classList.add(className);
-        } else {
-          element.classList.remove(className);
-        }
-      });
-    }
-    const header = document.querySelector('.header');
+      function addClassOnScroll(element, className, scrollPx) {
+        window.addEventListener("scroll", () => {
+          if (window.scrollY >= scrollPx) {
+            element.classList.add(className);
+          } else {
+            element.classList.remove(className);
+          }
+        });
+      }
+      const header = document.querySelector(".header");
 
-    addClassOnScroll(header, 'scrolled', 100);
-  </script>
+      addClassOnScroll(header, "scrolled", 100);
+    </script>
   </body>
 </html>

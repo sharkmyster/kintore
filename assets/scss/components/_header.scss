@@ -7,11 +7,15 @@ header {
   background-color: var(--color-surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
-  transition: top 0.3s, border-radius 0.3s, width 0.3s, margin 0.3s,
+  transition:
+    top 0.3s,
+    border-radius 0.3s,
+    width 0.3s,
+    margin 0.3s,
     max-width 0.3s;
   left: 50%;
   transform: translateX(-50%);
-  max-width: 1150px;
+  max-width: 1440px;
 }
 
 header.scrolled {

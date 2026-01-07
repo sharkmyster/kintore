@@ -12,12 +12,30 @@ body {
   font-family: $font-family-sans;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family-title);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
   color: var(--color-primary);
+  letter-spacing: 1.5px;
 }
 
 main {
-  min-width: 500px;
-  max-width: 1200px;
   margin: 0 auto;
+}
+
+section {
+  margin: 0 auto;
+
+  .content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
 }
