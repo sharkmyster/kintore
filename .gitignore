@@ -11,3 +11,5 @@ hugo_stats.json
 
 # Local environment overrides
 .env
+
+/node_modules

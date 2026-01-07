@@ -1,2 +1,2 @@
-layouts/**/*.gohtml
-layouts/**/*.html
+/public/**
+/resources/**
