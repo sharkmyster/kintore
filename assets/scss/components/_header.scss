@@ -16,6 +16,10 @@ header {
   left: 50%;
   transform: translateX(-50%);
   max-width: 1440px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header.scrolled {
@@ -23,4 +27,32 @@ header.scrolled {
   border-radius: 0;
   margin: 0;
   width: 100%;
+}
+
+.site-logo a {
+  text-decoration: none;
+}
+
+.main-nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0 0.5rem;
+  }
+
+  a {
+    font-family: var(--font-family-title);
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: var(--color-black);
+
+    &:hover {
+      color: var(--color-secondary);
+    }
+  }
 }
