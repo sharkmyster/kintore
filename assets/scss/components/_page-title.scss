@@ -1,0 +1,19 @@
+.page-title {
+  background-color: var(--color-surface-brand-primary);
+  color: var(--color-text-inverse);
+
+  .content {
+    padding: 9rem 1rem 2rem;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+
+    .title {
+      color: var(--color-text-inverse);
+      text-transform: uppercase;
+      font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+      line-height: 1.2em;
+      display: block;
+    }
+  }
+}

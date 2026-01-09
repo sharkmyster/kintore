@@ -1,25 +1,29 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-
-  {{ .Content }}
+  {{ partial "page-title.html" . }}
 
 
-  <form action="#" method="post">
-    <div>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+  <section><div class="content">{{ .Content }}</div></section>
+
+  <section>
+    <div class="content">
+      <form action="#" method="post">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit">Send</button>
+      </form>
     </div>
-
-    <div>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-    </div>
-
-    <div>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-    </div>
-
-    <button type="submit">Send</button>
-  </form>
+  </section>
 {{ end }}

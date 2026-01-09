@@ -10,13 +10,30 @@
 
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include tablet-up {
+      flex-direction: row;
+      justify-content: center;
+    }
 
     .left {
-      width: 30%;
+      width: 100%;
+
+      @include tablet-up {
+        width: 40%;
+      }
     }
 
     .right {
-      width: 50%;
+      width: 90%;
+      margin-top: 1rem;
+
+      @include tablet-up {
+        margin: 0 1rem 0 2rem;
+        width: 50%;
+      }
     }
 
     @include desktop-up {
@@ -42,12 +59,15 @@
 
     .blurb {
       margin: 1rem auto;
-      max-width: 70%;
+      max-width: 80%;
+
+      @include tablet-up {
+        max-width: 100%;
+      }
 
       @include desktop-up {
         margin: 1rem 0;
         width: 100%;
-        max-width: 100%;
       }
     }
   }

@@ -4,6 +4,9 @@ draft = false
 title = 'Contact'
 type = 'page'
 layout = 'contact'
+
+[menu.main]
+  weight = 30
 +++
 
 Get in touch with me!
