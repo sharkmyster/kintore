@@ -8,6 +8,17 @@
     margin: 0 auto;
     text-align: center;
 
+    display: flex;
+    justify-content: center;
+
+    .left {
+      width: 30%;
+    }
+
+    .right {
+      width: 50%;
+    }
+
     @include desktop-up {
       padding: 14rem 2rem 8rem;
       text-align: left;
@@ -35,7 +46,8 @@
 
       @include desktop-up {
         margin: 1rem 0;
-        width: 400px;
+        width: 100%;
+        max-width: 100%;
       }
     }
   }

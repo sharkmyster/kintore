@@ -1,17 +1,24 @@
 {{ define "main" }}
   <div class="homepage-hero">
     <div class="homepage-hero-content">
-      <h1>
-        <span class="topper">Custom Designs, Custom Coded</span>
-        <span class="title">Small Business </span>
-        <span class="title"> Web Designer </span>
-      </h1>
-
-      <p class="blurb">
-        No page builders or WordPress. We offer 100% hand-coded websites with
-        superior results starting at $175/mo as well as Google Ads and SEO
-        services.
-      </p>
+      <div class="left">
+        <h1>
+          <span class="topper">Custom Designs, Custom Coded</span>
+          <span class="title">Small Business </span>
+          <span class="title"> Web Designer </span>
+        </h1>
+        <p class="blurb">
+          We build high-performance, hand-crafted websites from the ground up to
+          ensure superior speed and conversions. <br />
+          Get started from £140/mo.
+        </p>
+      </div>
+      <div class="right">
+        <img
+          src="{{ `/images/all-devices.png` | relURL }}"
+          alt="Image shows multiple devices with same website design on each"
+        />
+      </div>
     </div>
   </div>
 
